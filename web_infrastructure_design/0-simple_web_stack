@@ -1,0 +1,22 @@
+A server is a computer that provides some kind of service to the clients, one each of these server runs
+an OS and they're typically in data centers. 
+When you make a request to a web server, it will give to the user the codebase (static files)
+that are going to be interpreted using a web browser. A server can be running on a physical
+machine or can be virtualized, both ways of implement them have the same behavior.
+Nowadays the big majority of servers are virtualized because it optimizes resources.
+To connect to a server we can use the TCP/IP protocol by internet. But it's a little
+hard to remember each sequence of numbers to connect to an specific server, right?
+Well, here we can introduce Domain Names, these are human-readable names that are converted
+into an IP using DNS servers, in this case when we go to our browser and type www.foobar.com
+the DNS server is going to return 8.8.8.8, then we can proceed to connect to the server.
+In this case, this one is an A record because it resolves to an IP address.
+Inside the server that we're using in this model we also have the application server and the database.
+A database main role is to store application data. When we have a dynamic website, the codebase is combined
+with the database data through the Application server making dynamic websites.
+This web structure design have some vulnerabilities for example, having only one server gives us
+a single point of failure, if the server stops working for an unknown reason, all of our service is going
+to be stopped and also is going to be less secure, but we're going to cover this in the next exercises.
+having just one server also makes that when we have to deploy new code, we have to stop or server from running,
+also another disadvantage is that if we have a big user traffic, our website is going to run slowly
+
+You can check the representation of this exercise on the next link: https://imgur.com/FUMqSuN
